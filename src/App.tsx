@@ -27,7 +27,7 @@ const WeatherApp: React.FC = () => {
         try {
             setLoading(true);
             const response = await fetch(
-                `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`
+                `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`
             );
             const data = await response.json();
 
@@ -56,7 +56,7 @@ const WeatherApp: React.FC = () => {
 
     return (
         <div className="bg-white text-black mx-auto max-w-1280 text-center p-7 rounded-lg h-auto">
-            {/* search form */}
+            {/* Search form */}
 
             <form onSubmit={handleSubmit} className="flex">
                 <input
