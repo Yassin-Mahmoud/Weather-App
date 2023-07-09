@@ -3,7 +3,7 @@ name: Deploy static content to Pages
 
 on:
     env:
-        VITE_WEATHER_API_KEY: 2efda6f1cc28d55c4bb4d25cb9888fb2
+        VITE_WEATHER_API_KEY: "2efda6f1cc28d55c4bb4d25cb9888fb2"
 
     # Runs on pushes targeting the default branch
     push:
