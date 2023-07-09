@@ -27,8 +27,6 @@ jobs:
             name: github-pages
             url: ${{ steps.deployment.outputs.page_url }}
         runs-on: ubuntu-latest
-        env:
-            VITE_WEATHER_API_KEY: 2efda6f1cc28d55c4bb4d25cb9888fb2
         steps:
             - name: Checkout
               uses: actions/checkout@v3
