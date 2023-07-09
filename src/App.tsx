@@ -39,7 +39,6 @@ const WeatherApp: React.FC = () => {
 
             setWeather(data);
             setLoading(false);
-            console.log(data);
         } catch (err) {
             console.log(err);
         }
